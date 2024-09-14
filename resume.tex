@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Brian Kam 
+% Based off of: https://github.com/jakegut/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubExpheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeActivitiesHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l}
+      \small#1 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Brian Kam} \\ \vspace{1pt}
+    \href{https://github.com/...}{\underline{github.com/dhkam1102}}
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/dhkam1102}} $|$
+    \href{mailto:x@x.com}{\underline{brianhyunkam@gmail.com}} $|$ 
+    \href{location, STATE}{\underline{Los Angeles, CA}}
+
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UNIVERSITY OF CALIFORNIA IRVINE}{Irvine, CA}
+      {BS in Computer Science, Dean’s List (4x)}{September 2020 -- May 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubExpheading
+      {\textbf{EVEMETA} $-$ \emph{Software Engineer Intern}}{July 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Enhanced corporate-level backend operations: Developed and deployed Go-based microservices that improved system reliability and performance within a mid-scale IT environment, ensuring secure data transactions across different business systems.}
+        \resumeItem{Developed corporate-grade video player: Designed a highly reliable video player using Flutter and libwebRTC, incorporating features such as play/pause, refresh, and advanced noise/haze reduction, aimed at improving user experience across a broad user base.}
+        \resumeItem{Built scalable content aggregation systems: Created a content retrieval and display system that efficiently aggregated news articles from multiple sources, optimizing for memory usage and reducing the dependency on traditional databases, thus improving data availability and consistency across the organization.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Spotube Downloader} $|$ \emph{Python Project}}
+          \resumeItemListStart
+            \resumeItem{Automated Playlist Conversion Solution: Engineered an innovative Python-based tool designed to streamline the transfer of large-scale YouTube video playlists into Spotify. This solution automates the extraction and conversion of music tracks, significantly reducing manual labor and enhancing efficiency for managing large collections of licensed media.}
+            \resumeItem{Local Data Retention Solution: Provides a scalable way to retain access to licensed media, ensuring data continuity. Ideal for individuals for robust content management solution in the digital media space.}
+
+            % \resumeItem{Local Data Retention Solution: Provides a scalable way to retain access to licensed media, ensuring data continuity. Ideal for individuals and organizations that require robust content management solutions in the digital media space.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Fablix Movie Page} $|$ \emph{Java, Tomcat, AWS, GCP, Docker, Kubernetes}}
+          \resumeItemListStart
+            \resumeItem{Full-Stack system integration: Designed and executed a comprehensive full-stack movie database system integrating advanced search, browsing, and purchasing capabilities with support for autocomplete and master-slave database configurations.}
+            \resumeItem{Infrastructure optimization for large-scale deployment: Managed the deployment and orchestration of the system using AWS load balancing, Kubernetes, and docker containers.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+%-----------ACTIVITIES-----------
+\section{Activities}
+    \resumeSubHeadingListStart
+      \resumeActivitiesHeading
+          {\textbf{LikeLion} $|$ \emph{Co-founder of LikeLion UCI}}{August 2022 -- August 2023}
+          \resumeItemListStart
+            \resumeItem{Led enterprise training initiatives: Co-founded University of California Irvine’s first coding education platform, focusing on enterprise-level programming and system architecture, facilitating peer-to-peer learning and hands-on project collaboration within a corporate framework.}
+            \resumeItem{Directed coding and IT workshops: Led workshops that trained participants in enterprise-level programming and IT practices, enhancing their ability to contribute to large-scale IT projects in Fortune 500 companies.}
+            \resumeItem{Established global IT network connections: Connected students with LikeLion's global network, providing mentorship and participation in global IT initiatives, hackathons, and enterprise-level project developments.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Go, Java, C++, C, HTML/CSS, JavaScript} \\
+     \textbf{Frameworks \& Library}{: Flask, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, GCP, Kubernestes, Tomcat, VS Code, Maven, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Concepts}{: Software Engineering, Data Structures and Algorithms, System Design, Cloud Infrastructure}\\
+     \textbf{Language Proficiency}{: Software Engineering, Machine Learning, Data Structures and Algorithms, System Design, Cloud Infrastructure}
+
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
