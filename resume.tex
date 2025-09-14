@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Brian Kam 
-% Based off of: https://github.com/jakegut/resume
+% Based off of Jack's resume: https://github.com/sb2nov/resume
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -75,15 +75,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubExpheading}[2]{
-    \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-
-
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -91,20 +82,20 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeActivitiesHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\experienceSubheading}[3]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} -- \textit{#2} & #3 \\
+  \end{tabular*}\vspace{-7pt}
 }
 
+
 \newcommand{\resumeProjectHeading}[1]{
-    \item
+  \item
     \begin{tabular*}{0.97\textwidth}{l}
       \small#1 \\
     \end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -142,42 +133,53 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {UNIVERSITY OF CALIFORNIA IRVINE}{Irvine, CA}
-      {Bachelor of Science in Computer Science, Dean’s List (4x)}{Expected: March 2026}
-      \resumeItem{Courses: Data Structures \& Algorithms, Project in Databases and Web Applications, Operating Systems}
+      {Bachelor of Science in Computer Science, Dean’s List (4x)}{Expected March 2026}
   \resumeSubHeadingListEnd
 
 
-
 %-----------EXPERIENCE-----------
-\section{Work Experience}
+\section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubExpheading
-      {\textbf{EVEMETA} $-$ \emph{Software Engineer Intern}}{July 2024 -- November 2024}
+    \experienceSubheading
+    {American Express}{Software Engineer Intern}{June 2025 -- August 2025}
       \resumeItemListStart
-      \resumeItem{Designed and deployed \textbf{Go-based microservices} to manage user login and signup information, enhancing system reliability by 10\% and \textbf{reducing payment transaction errors by 10\%} in a mid-scale IT environment while ensuring secure and efficient payment processing across business systems.}        
-      \resumeItem{Contributed to the development of a highly reliable video player using \textbf{Flutter}, implementing key features like play/pause, refresh, and \textbf{advanced noise/haze reduction}, which improved user satisfaction by 20\%, \textbf{reduced buffering time by 25\%}, and enabled smooth, low-latency streaming at 60 FPS}
-        \resumeItem{Developed a system to aggregate news articles from multiple sources using \textbf{MongoDB}, \textbf{reducing memory usage by 20\%}, \textbf{accelerating content delivery speed by 35\%}, and boosting data availability and consistency.}
-        \resumeItem{Conducted code reviews for \textbf{5+ developers weekly}, ensuring adherence to best practices and improving overall code quality, resulting in a \textbf{15\% reduction in bugs}.}
-      \resumeItemListEnd
+      \resumeItem{Redesigned Elasticsearch tokenization and parsing methods, optimizing storage utilization up to 90\% to significantly improve query efficiency and reduce overall index footprint.}
+      \resumeItem{Built BPMN workflows in the ACE platform to automate recurring Elasticsearch indexing jobs, achieving 100\% hands-off patch deployments and eliminating manual intervention.}
+      \resumeItem{Migrated backend service from E0 (local) to E1/E2 (QA/Integration) by resolving 15+ environment-specific issues, validating deployments, and collaborating with cross-functional teams to ensure reliable release readiness.}      
+    \resumeItemListEnd
 
-    \resumeSubExpheading
-      {\textbf{Commit The Change} $-$ \emph{Software Developer Intern}}{January 2024 -- June 2024}
+    % \experienceSubheading
+    % {Quantinuum}{Software Engineer Intern}{September 2025 -- December 2025}
+    %   \resumeItemListStart
+    %     \resumeItem{something something}
+    %     \resumeItem{something something}
+    %     \resumeItem{something something}
+    % \resumeItemListEnd
+
+    \experienceSubheading
+    {EVEMETA}{Software Engineer Intern}{July 2024 -- November 2024}
       \resumeItemListStart
-        \resumeItem{Designed and implemented \textbf{scalable API endpoints} using \textbf{Flask(Python)} and \textbf{Java}, optimizing backend performance by \textbf{20\%} through efficient database interaction and streamlined logic, ensuring reliable data exchange.}
-        \resumeItem{Integrated \textbf{RESTful APIs} with frontend applications using \textbf{React.js}, ensuring seamless communication and supporting \textbf{300+ daily users}, increasing data retrieval efficiency by \textbf{15\%}.}
-        \resumeItem{Led and coordinated \textbf{code reviews} with 5 team members using \textbf{GitHub}, identifying and resolving over \textbf{30+ code issues}, improving code quality and maintainability by \textbf{25\%}.}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
+      \resumeItem{Designed and deployed Go-based microservices to manage user login and signup information, enhancing system reliability by 10\%
+                    and reducing payment transaction errors by 10\% in a mid-scale IT environment while ensuring secure and efficient payment processing 
+                    across business systems.}
+      \resumeItem{Contributed to the development of a highly reliable video player using Flutter, implementing key features like
+                    play/pause, refresh, and advanced noise/haze reduction, which improved user satisfaction by 20\%, reduced
+                    buffering time by 25\%, and enabled smooth, low-latency streaming at 60 FPS}
+      \resumeItem{Developed a system to aggregate news articles from multiple sources using MongoDB, reducing memory usage
+                    by 20\%, accelerating content delivery speed by 35\%, and boosting data availability and consistency.}
+    \resumeItemListEnd
+
+    \experienceSubheading
+    {Commit The Change}{Software Developer Intern}{January 2024 -- June 2024}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented scalable API endpoints using Flask(Python) and Java, optimizing backend
+                        performance by 20\% through efficient database interaction and streamlined logic, ensuring reliable data exchange.}
+        \resumeItem{Integrated RESTful APIs with frontend applications using React.js, ensuring seamless communication and
+                        supporting 300+ daily users, increasing data retrieval efficiency by 15\%.}
+        \resumeItem{Led and coordinated code reviews with 5 team members using GitHub, identifying and resolving over 30+
+                        code issues, improving code quality and maintainability by 25\%.}
+    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -185,52 +187,44 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      % \resumeProjectHeading
-      %     {\textbf{Spotube Downloader} $|$ \emph{Python Project}}
-      %     \resumeItemListStart
-      %       \resumeItem{Designed a Python tool using youtube-dl, Spotify API, and web scraping techniques to \textbf{automate playlist transfers} from YouTube to Spotify. \textbf{Reduced manual processing time by 90\%} and improved media management efficiency.}
-      %       \resumeItem{Created a scalable \textbf{data retention solution} with \textbf{SQLite and file compression}, ensuring 100\% media retention and reducing storage costs by 40\%, enabling seamless access to media across platforms.}
-
-      %       % \resumeItem{Local Data Retention Solution: Provides a scalable way to retain access to licensed media, ensuring data continuity. Ideal for individuals and organizations that require robust content management solutions in the digital media space.}
-      %     \resumeItemListEnd
-
       \resumeProjectHeading
           {\textbf{Fablix Movie Page} $|$ \emph{Java, Tomcat, AWS, GCP, Docker, Kubernetes}}
           \resumeItemListStart
-            \resumeItem{Crafted a responsive front-end using HTML, CSS, and JavaScript with advanced search, filtering, and autocomplete features for movies, optimizing the user experience for seamless navigation.}
-            \resumeItem{Built a robust back-end in Java and Tomcat with a \textbf{master-slave MySQL database configuration} and \textbf{Redis caching}, optimizing query performance, reducing response time by 40\% with edit distance queries, and minimizing user search errors by 18\% through efficient RESTful API endpoints and optimized server-side logic.}
-            \resumeItem{Managed the deployment and orchestration of the system using \textbf{AWS EC2, ELB (Elastic Load Balancing), Kubernetes, and Docker containers} \textbf{expanding scalability by 3x} and reducing server response time by 30\%.}
+            \resumeItem{Developed a responsive full-stack movie web app with advanced search, filtering, and autocomplete features; 
+                        optimized backend using edit distance queries, RESTful APIs, and Redis caching, reducing response time by 40\% and search errors by 18\%.}
+            \resumeItem{Deployed and orchestrated the system using  AWS EC2, ELB (Elastic Load Balancing),
+                            Kubernetes, and Docker containers expanding scalability by 3x and reducing server response time by 30\%.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%-----------ACTIVITIES-----------
+
+%-----------Activities-----------
 \section{Activities}
     \resumeSubHeadingListStart
-      \resumeActivitiesHeading
-          {\textbf{LikeLion} $|$ \emph{Co-founder of LikeLion UCI}}{August 2022 -- August 2023}
+      \resumeProjectHeading
+          {\textbf{LikeLion} $|$ \emph{Co-founder of LikeLion UCI}}
           \resumeItemListStart
-            \resumeItem{\textbf{Co-founded} UCI’s first coding platform, facilitating \textbf{peer learning for 100+ students} with 80\% hands-on collaboration.}
-            \resumeItem{Led 10+ workshops that trained participants in \textbf{enterprise-level programming and IT practices}, enhancing their ability to contribute to large-scale IT projects in Fortune 500 companies.}
-            \resumeItem{Connected with 50+ students through LikeLion's global network, providing mentorship and collaboration in \textbf{IT projects and hackathons}. As a result, 20\% of participants secured internships in tech.}
-          \resumeItemListEnd
+            \resumeItem{Co-founded UCI’s first coding platform and led 10+ hands-on workshops, delivering peer-based technical education to 100+ 
+                            students with 80\% collaborative participation and real-world software training.}
+            \resumeItem{Mentored 50+ students through LikeLion’s global network, connecting peers across the U.S. West Coast and South Korea, 
+                            and facilitating tech projects and hackathons resulting in 20\% of participants securing internships.}
+        \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%
 
+%
 %-----------PROGRAMMING SKILLS-----------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{
-        \item{
-            \textbf{Programming Languages:} Python, Go, Java, C/C++, HTML/CSS, JavaScript, Bash \\
-            \textbf{Frameworks \& Libraries:} Flask, FastAPI, React, Node.js\\
-            \textbf{Tools:} Git, Unix, MySQL, MongoDB, Docker, Kubernetes,  AWS, GCP, Tomcat,  Maven, VS Code, IntelliJ, Eclipse\\
-            \textbf{Concepts:} Software Engineering, Data Structures \& Algorithms, System Design, Database Systems, Cloud Infrastructure, Machine Learning, REST API, Unit Testing, Test-Driven Development\\
-            \textbf{Language Proficiency:} Fluent in English and Korean; Conversational Proficiency in Japanese\\
-            \textbf{Certifications:} AWS Certified Cloud Practitioner, AWS Solutions Architect
-          }
-    }
-\end{itemize}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Go, Java, C/C++, HTML/CSS, JavaScript, Bash} \\
+     \textbf{Frameworks \& Libraries}{: Flask, FastAPI, React, Node.js} \\
+     \textbf{Tools}{: Elasticsearch, Kibana, BPMN, Git, Unix, MySQL, MongoDB, Docker, Kubernetes, AWS, GCP, Tomcat, Maven} \\
+     \textbf{Certifications}{: AWS Certified Cloud Practitioner (CLF-C02), AWS Certified Solutions Architect(SAA-C02) } \\
+     \textbf{Concepts}{: Software Engineering, Data Structures \& Algorithms, System Design, Database Systems, Cloud 
+                            Infrastructure, Machine Learning, REST API, Unit Testing, Test-Driven Development, Workflow Automation}
+    }}
+ \end{itemize}
 
 
 %-------------------------------------------
