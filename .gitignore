@@ -1,0 +1,61 @@
+# -------------------------
+# LaTeX build files
+# -------------------------
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.synctex.gz(busy)
+*.fls
+*.fdb_latexmk
+
+# Latexmk specific
+*.dvi
+*.xdv
+
+# PDF Latex intermediate
+*.nav
+*.snm
+*.vrb
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*~
+
+# VSCode settings
+.vscode/
+
+# MacOS junk files
+.DS_Store
+
+# IDE cache files
+*.swp
+*.swo
+
+# Generated PDFs except main resume
+# Comment out if you want multiple PDFs tracked
+# Keep ONLY resume.pdf tracked
+test.pdf
+*_temp.pdf
+
+# PNG previews (optional)
+# Uncomment if you don't want PNGs tracked
+#*.png
+
+# -------------------------
+# Keep these files
+# -------------------------
+!resume.tex
+!resume.pdf
+!README.md
