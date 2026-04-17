@@ -43,6 +43,9 @@
 *.swp
 *.swo
 
+# Claude Code
+.claudeignore
+
 # Generated PDFs except main resume
 # Comment out if you want multiple PDFs tracked
 # Keep ONLY resume.pdf tracked
