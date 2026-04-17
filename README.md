@@ -1,4 +1,5 @@
-# resume
-LaTeX template for my personal resume
+# Resume
 
-![My Resume](./resume.png)
+[![View PDF](https://img.shields.io/badge/View-PDF-red)](./resume.pdf)
+
+![Resume Preview](./resume.png)

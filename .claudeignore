@@ -1,0 +1,32 @@
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.synctex.gz(busy)
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.toc
+*.dvi
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.tmp
+*.bak
+*.backup
+*~
+
+# Test files
+test.*
+
+# Mac junk
+.DS_Store

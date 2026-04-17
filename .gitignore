@@ -47,6 +47,7 @@
 # Comment out if you want multiple PDFs tracked
 # Keep ONLY resume.pdf tracked
 test.pdf
+test.*
 *_temp.pdf
 
 # PNG previews (optional)
@@ -58,4 +59,5 @@ test.pdf
 # -------------------------
 !resume.tex
 !resume.pdf
+!resume.png
 !README.md
